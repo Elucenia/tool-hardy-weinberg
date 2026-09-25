@@ -1,0 +1,201 @@
+{
+  "tool": {
+    "id": "hardy-weinberg",
+    "title": "Equilíbrio de Hardy-Weinberg",
+    "short": "Portadores e risco do casal em doença recessiva",
+    "spec": [
+      "genetica-medica",
+      "ginecologia-e-obstetricia",
+      "pediatria"
+    ],
+    "tier": 1,
+    "desc": "Calcule pela lei de Hardy-Weinberg a frequência de portadores de uma doença autossômica recessiva e o risco de um casal ter um filho afetado.",
+    "lead": "Estima, a partir da incidência de uma doença autossômica recessiva, a frequência do alelo e de portadores na população e o risco de o casal ter um filho afetado em cada gestação.",
+    "fields": [
+      [
+        "incid",
+        "Incidência da doença: 1 afetado a cada",
+        "num",
+        {
+          "min": 100,
+          "max": 1000000,
+          "step": 1,
+          "unit": "nascidos",
+          "ph": "2500"
+        }
+      ],
+      [
+        "p1",
+        "Parceiro 1",
+        "radio",
+        {
+          "opts": {
+            "pop": "População geral",
+            "port": "Portador confirmado",
+            "irmao": "Irmão(ã) não afetado de um afetado"
+          }
+        }
+      ],
+      [
+        "p2",
+        "Parceiro 2",
+        "radio",
+        {
+          "opts": {
+            "pop": "População geral",
+            "port": "Portador confirmado",
+            "irmao": "Irmão(ã) não afetado de um afetado"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>Em equilíbrio: <strong>p² + 2pq + q² = 1</strong>, em que q é a frequência do alelo patogênico e p = 1 − q.</p><ul><li>Incidência da doença = q², logo <strong>q = √incidência</strong>.</li><li>Frequência de portadores (heterozigotos) = <strong>2pq</strong> (≈ 2q quando q é pequeno).</li><li>Probabilidade de cada parceiro ser portador: população geral = 2pq; portador confirmado = 1; irmão não afetado de um afetado = 2/3.</li><li><strong>Risco por gestação</strong> = P(parceiro 1 portador) × P(parceiro 2 portador) × 1/4.</li></ul>",
+    "table": [
+      [
+        "Situação do casal (doença 1:2.500)",
+        "Risco de filho afetado"
+      ],
+      [
+        "Ambos da população geral",
+        "1 em 2.603"
+      ],
+      [
+        "Um portador confirmado e outro da população",
+        "1 em 102"
+      ],
+      [
+        "Irmão de afetado e parceiro da população",
+        "1 em 153"
+      ],
+      [
+        "Ambos portadores",
+        "1 em 4"
+      ]
+    ],
+    "tips": [
+      "Hardy-Weinberg supõe população grande, com casamentos ao acaso e sem seleção, migração ou mutação relevantes: em casais consanguíneos ou em grupos com efeito fundador, a frequência de portadores é maior do que a calculada.",
+      "Use a incidência da população de origem do casal: a fibrose cística, por exemplo, varia muito entre regiões e ancestralidades no Brasil.",
+      "Para o irmão não afetado de um afetado, a probabilidade de ser portador é 2/3 (e não 1/2), porque o genótipo afetado já foi excluído.",
+      "Um teste de portador negativo reduz o risco, mas não o zera: a sensibilidade depende das variantes pesquisadas (painel ou sequenciamento). Encaminhe para aconselhamento genético."
+    ],
+    "sources": [
+      [
+        "Hardy GH. Mendelian proportions in a mixed population. Science, 1908.",
+        "https://doi.org/10.1126/science.28.706.49"
+      ],
+      [
+        "Mayo O. A century of Hardy-Weinberg equilibrium. Twin Res Hum Genet, 2008.",
+        "https://doi.org/10.1375/twin.11.3.249"
+      ]
+    ],
+    "cases": [
+      [
+        "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        {
+          "incid": 2500,
+          "p1": "pop",
+          "p2": "pop"
+        },
+        {
+          "raw": {
+            "q": 0.02,
+            "n_port": 25.51,
+            "n_risco": 2603.1
+          },
+          "tol": 0.5,
+          "level": "info"
+        }
+      ],
+      [
+        "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        {
+          "incid": 2500,
+          "p1": "port",
+          "p2": "pop"
+        },
+        {
+          "raw": {
+            "n_risco": 102.04
+          },
+          "tol": 0.05
+        }
+      ],
+      [
+        "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        {
+          "incid": 2500,
+          "p1": "irmao",
+          "p2": "pop"
+        },
+        {
+          "raw": {
+            "n_risco": 153.06
+          },
+          "tol": 0.05
+        }
+      ],
+      [
+        "Ambos portadores: 1 em 4",
+        {
+          "incid": 10000,
+          "p1": "port",
+          "p2": "port"
+        },
+        {
+          "raw": {
+            "risco": 0.25
+          },
+          "main": "1 em 4"
+        }
+      ],
+      [
+        "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        {
+          "incid": 10000,
+          "p1": "pop",
+          "p2": "pop"
+        },
+        {
+          "raw": {
+            "q": 0.01,
+            "portadores": 0.0198,
+            "n_port": 50.505
+          },
+          "tol": 0.001
+        }
+      ]
+    ],
+    "batch": "mulher-crianca",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "mulher-crianca",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/mulher-crianca.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/mulher-crianca.php",
+    "sha256": "c37d3fefb430d6ec19144161e40e9a08247f3a10406e2873c8d6a4be8649917c",
+    "bytes": 81915
+  },
+  "clinicalValidation": "not-performed"
+}

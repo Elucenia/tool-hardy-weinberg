@@ -1,0 +1,107 @@
+[
+  {
+    "label": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+    "input": {
+      "incid": 2500,
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "raw": {
+        "q": 0.02,
+        "n_port": 25.51,
+        "n_risco": 2603.1
+      },
+      "tol": 0.5,
+      "level": "info"
+    },
+    "originalInput": {
+      "incid": 2500,
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+    "input": {
+      "incid": 2500,
+      "p1": "port",
+      "p2": "pop"
+    },
+    "expected": {
+      "raw": {
+        "n_risco": 102.04
+      },
+      "tol": 0.05
+    },
+    "originalInput": {
+      "incid": 2500,
+      "p1": "port",
+      "p2": "pop"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+    "input": {
+      "incid": 2500,
+      "p1": "irmao",
+      "p2": "pop"
+    },
+    "expected": {
+      "raw": {
+        "n_risco": 153.06
+      },
+      "tol": 0.05
+    },
+    "originalInput": {
+      "incid": 2500,
+      "p1": "irmao",
+      "p2": "pop"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Ambos portadores: 1 em 4",
+    "input": {
+      "incid": 10000,
+      "p1": "port",
+      "p2": "port"
+    },
+    "expected": {
+      "raw": {
+        "risco": 0.25
+      },
+      "main": "1 em 4"
+    },
+    "originalInput": {
+      "incid": 10000,
+      "p1": "port",
+      "p2": "port"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+    "input": {
+      "incid": 10000,
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "raw": {
+        "q": 0.01,
+        "portadores": 0.0198,
+        "n_port": 50.505
+      },
+      "tol": 0.001
+    },
+    "originalInput": {
+      "incid": 10000,
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expandedZeroOptions": []
+  }
+]
