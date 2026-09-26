@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-hardy-weinberg · Elucenia · https://github.com/Elucenia/tool-hardy-weinberg
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"hardy-weinberg","title":"Equilíbrio de Hardy-Weinberg","fields":[["incid","Incidência da doença: 1 afetado a cada","num",{"min":100,"max":1000000,"step":1,"unit":"nascidos","ph":"2500"}],["p1","Parceiro 1","radio",{"opts":{"pop":"População geral","port":"Portador confirmado","irmao":"Irmão(ã) não afetado de um afetado"}}],["p2","Parceiro 2","radio",{"opts":{"pop":"População geral","port":"Portador confirmado","irmao":"Irmão(ã) não afetado de um afetado"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
