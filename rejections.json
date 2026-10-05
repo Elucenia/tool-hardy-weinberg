@@ -1,0 +1,243 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field incid",
+    "input": {
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field incid",
+    "input": {
+      "incid": "",
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" incid",
+    "input": {
+      "incid": "NaN",
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" incid",
+    "input": {
+      "incid": "Infinity",
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" incid",
+    "input": {
+      "incid": "1e309",
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" incid",
+    "input": {
+      "incid": "invalid",
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} incid",
+    "input": {
+      "incid": {},
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true incid",
+    "input": {
+      "incid": true,
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum incid",
+    "input": {
+      "incid": 90,
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum incid",
+    "input": {
+      "incid": 1100000,
+      "p1": "pop",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "incid"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field p1",
+    "input": {
+      "incid": 2500,
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field p1",
+    "input": {
+      "incid": 2500,
+      "p1": "",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option p1",
+    "input": {
+      "incid": 2500,
+      "p1": "__ELUCENIA_INVALID_OPTION__",
+      "p2": "pop"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "p1"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field p2",
+    "input": {
+      "incid": 2500,
+      "p1": "pop"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field p2",
+    "input": {
+      "incid": 2500,
+      "p1": "pop",
+      "p2": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option p2",
+    "input": {
+      "incid": 2500,
+      "p1": "pop",
+      "p2": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "p2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

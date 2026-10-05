@@ -3,14 +3,14 @@
     "id": "hardy-weinberg",
     "title": "Equilíbrio de Hardy-Weinberg",
     "short": "Portadores e risco do casal em doença recessiva",
+    "desc": "Calcule pela lei de Hardy-Weinberg a frequência de portadores de uma doença autossômica recessiva e o risco de um casal ter um filho afetado.",
+    "lead": "Estima, a partir da incidência de uma doença autossômica recessiva, a frequência do alelo e de portadores na população e o risco de o casal ter um filho afetado em cada gestação.",
+    "kind": "Calculadora",
     "spec": [
       "genetica-medica",
       "ginecologia-e-obstetricia",
       "pediatria"
     ],
-    "tier": 1,
-    "desc": "Calcule pela lei de Hardy-Weinberg a frequência de portadores de uma doença autossômica recessiva e o risco de um casal ter um filho afetado.",
-    "lead": "Estima, a partir da incidência de uma doença autossômica recessiva, a frequência do alelo e de portadores na população e o risco de o casal ter um filho afetado em cada gestação.",
     "fields": [
       [
         "incid",
@@ -50,34 +50,6 @@
       ]
     ],
     "formula": "<p>Em equilíbrio: <strong>p² + 2pq + q² = 1</strong>, em que q é a frequência do alelo patogênico e p = 1 − q.</p><ul><li>Incidência da doença = q², logo <strong>q = √incidência</strong>.</li><li>Frequência de portadores (heterozigotos) = <strong>2pq</strong> (≈ 2q quando q é pequeno).</li><li>Probabilidade de cada parceiro ser portador: população geral = 2pq; portador confirmado = 1; irmão não afetado de um afetado = 2/3.</li><li><strong>Risco por gestação</strong> = P(parceiro 1 portador) × P(parceiro 2 portador) × 1/4.</li></ul>",
-    "table": [
-      [
-        "Situação do casal (doença 1:2.500)",
-        "Risco de filho afetado"
-      ],
-      [
-        "Ambos da população geral",
-        "1 em 2.603"
-      ],
-      [
-        "Um portador confirmado e outro da população",
-        "1 em 102"
-      ],
-      [
-        "Irmão de afetado e parceiro da população",
-        "1 em 153"
-      ],
-      [
-        "Ambos portadores",
-        "1 em 4"
-      ]
-    ],
-    "tips": [
-      "Hardy-Weinberg supõe população grande, com casamentos ao acaso e sem seleção, migração ou mutação relevantes: em casais consanguíneos ou em grupos com efeito fundador, a frequência de portadores é maior do que a calculada.",
-      "Use a incidência da população de origem do casal: a fibrose cística, por exemplo, varia muito entre regiões e ancestralidades no Brasil.",
-      "Para o irmão não afetado de um afetado, a probabilidade de ser portador é 2/3 (e não 1/2), porque o genótipo afetado já foi excluído.",
-      "Um teste de portador negativo reduz o risco, mas não o zera: a sensibilidade depende das variantes pesquisadas (painel ou sequenciamento). Encaminhe para aconselhamento genético."
-    ],
     "sources": [
       [
         "Hardy GH. Mendelian proportions in a mixed population. Science, 1908.",
@@ -86,6 +58,10 @@
       [
         "Mayo O. A century of Hardy-Weinberg equilibrium. Twin Res Hum Genet, 2008.",
         "https://doi.org/10.1375/twin.11.3.249"
+      ],
+      [
+        "GeneReviews carrier box,revised2016",
+        "https://www.ncbi.nlm.nih.gov/books/NBK5191/box/further_illus-19/"
       ]
     ],
     "cases": [
@@ -165,9 +141,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -176,17 +149,170 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T17:15:29.797Z",
+      "total": 3,
+      "passed": 3,
+      "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+      "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Hardy Weinberg 1908:p²+2 pq+q²; herança AR; irmão nãoafetado 2/3; risco conjugal×1/4",
+    "implementationVersion": "hardy-weinberg@native-2026-10-03+122bc955db05",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/17779291/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Em equilíbrio: p² + 2pq + q² = 1 , em que q é a frequência do alelo patogênico e p = 1 − q. Incidência da doença = q², logo q = √incidência . Frequência de portadores (heterozigotos) = 2pq (≈ 2q quando q é pequeno). Probabilidade de cada parceiro ser portador: população geral = 2pq; portador confirmado = 1; irmão não afetado de um afetado = 2/3. Risco por gestação = P(parceiro 1 portador) × P(parceiro 2 portador) × 1/4.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "incid",
+            "label": "Incidência da doença: 1 afetado a cada",
+            "type": "num",
+            "min": 100,
+            "max": 1000000,
+            "unit": "nascidos",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "p1",
+            "label": "Parceiro 1",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "pop": "População geral",
+              "port": "Portador confirmado",
+              "irmao": "Irmão(ã) não afetado de um afetado"
+            }
+          },
+          {
+            "key": "p2",
+            "label": "Parceiro 2",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "pop": "População geral",
+              "port": "Portador confirmado",
+              "irmao": "Irmão(ã) não afetado de um afetado"
+            }
+          }
+        ],
+        "hash": "3ce209a515eecbab1ad6cabe299e434900859f69d7f5d17c87c06b6400af0982"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Hardy GH. Mendelian proportions in a mixed population. Science, 1908.",
+          "url": "https://doi.org/10.1126/science.28.706.49",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "MENDELIAN PROPORTIONS IN A MIXED POPULATION.",
+            "year": "1908",
+            "firstPublicationDate": "1908-07-01",
+            "doi": "10.1126/science.28.706.49",
+            "pmid": "17779291",
+            "journal": "Science (New York, N.Y.)",
+            "authors": "Hardy GH."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/17779291/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Mayo O. A century of Hardy-Weinberg equilibrium. Twin Res Hum Genet, 2008.",
+          "url": "https://doi.org/10.1375/twin.11.3.249",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A century of Hardy-Weinberg equilibrium.",
+            "year": "2008",
+            "firstPublicationDate": "2008-06-01",
+            "doi": "10.1375/twin.11.3.249",
+            "pmid": "18498203",
+            "journal": "Twin research and human genetics : the official journal of the International Society for Twin Studies",
+            "authors": "Mayo O."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/18498203/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "b4b9711d57df3df0e6063ad1b54595d3d8bde4e743aaaab2ffe7b1027977aa66",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T17:15:29.797Z",
+        "total": 3,
+        "passed": 3,
+        "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+        "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "e91337bd2f20d5e6a78335ae2d699f5eb3594ad131dd48520f5f18ca9742a25a",
+          "meaning": "Reference to the already recorded per-tool evidence; no new test or approval is created by this synchronization."
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "122bc955db05f68c74eedf25184e4631ba72f06474efdda484c6feffeb3c48b3"
+    },
+    "limits": "O cálculo populacional assume um locus autossômico com dois alelos em equilíbrio de Hardy–Weinberg; acasalamento aleatório e uma população idealmente muito grande são pressupostos, não resultados do cálculo. Usar q² como frequência da doença exige correspondência com o modelo recessivo considerado. O risco familiar de 25% pressupõe dois pais portadores; os 2/3 para um irmão não afetado são uma probabilidade condicional nesse cenário. Não aplique essas relações a qualquer doença genética nem as interprete como diagnóstico individual.",
+    "limitsEvidence": {
+      "status": "original-model-abstract-and-primary-indexed-carrier-box-read",
+      "sources": [
+        {
+          "url": "https://doi.org/10.1375/twin.11.3.249",
+          "edition": "Mayo2008",
+          "readScope": "Exact original abstract fully read:one autosomal biallelic locus,random mating,indefinitely large population,discrete generations."
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK5191/box/further_illus-19/",
+          "edition": "GeneReviews carrier box,revised2016",
+          "readScope": "Primary institutional indexed full carrier box read;direct page CAPTCHA. Both parents carriers and unaffected-sibling conditional2/3 distinguished."
+        },
+        {
+          "url": "https://doi.org/10.1126/science.28.706.49",
+          "edition": "Hardy1908",
+          "readScope": "Identity only."
+        }
+      ],
+      "populationScope": "Ideal biallelic population model versus a separately conditional family calculation.",
+      "remainingChecks": [
+        "OriginalHardy1908 full paper not read.",
+        "No universal disease penetrance/multi-allelic/population applicability established."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/hardy-weinberg/calculator.js",
+    "bytes": 5134,
+    "sha256": "122bc955db05f68c74eedf25184e4631ba72f06474efdda484c6feffeb3c48b3"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "a5ac7b42feebda7c788943c102e71546cfff2fb804424a7ea9fb1eb1fef9f498",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 3,
+      "sha256": "aaedeb207ac2ab3f9c7e6e65f94b2a588c4aaee1ac5ee6c154eb4ddcb4d227b6",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,0 +1,645 @@
+{
+  "id": "hardy-weinberg",
+  "at": "2026-10-05T17:29:42.195Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/hardy-weinberg/calculator.js",
+    "bytes": 5134,
+    "sha256": "122bc955db05f68c74eedf25184e4631ba72f06474efdda484c6feffeb3c48b3"
+  },
+  "cases": [
+    {
+      "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+      "input": {
+        "incid": 2500,
+        "p1": "pop",
+        "p2": "pop"
+      },
+      "obtained": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 2.603",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.00038416,
+          "n_risco": 2603.082049146189
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.q",
+          "expected": 0.02,
+          "obtained": 0.02,
+          "tolerance": 0.5,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n_port",
+          "expected": 25.51,
+          "obtained": 25.510204081632654,
+          "tolerance": 0.5,
+          "difference": 0.0002040816326527306,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n_risco",
+          "expected": 2603.1,
+          "obtained": 2603.082049146189,
+          "tolerance": 0.5,
+          "difference": 0.017950853810816625,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.q",
+          "expected": 0.02,
+          "obtained": 0.02,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.portadores",
+          "expected": 0.0392,
+          "obtained": 0.0392,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_port",
+          "expected": 25.510204081632654,
+          "obtained": 25.510204081632654,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.risco",
+          "expected": 0.00038416,
+          "obtained": 0.00038416,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_risco",
+          "expected": 2603.082049146189,
+          "obtained": 2603.082049146189,
+          "tolerance": 2.603082049146189e-9,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1 em 2.603",
+          "obtained": "1 em 2.603",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "por gestação",
+          "obtained": "por gestação",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+      "input": {
+        "incid": 2500,
+        "p1": "port",
+        "p2": "pop"
+      },
+      "obtained": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 102",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.0098,
+          "n_risco": 102.04081632653062
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.n_risco",
+          "expected": 102.04,
+          "obtained": 102.04081632653062,
+          "tolerance": 0.05,
+          "difference": 0.0008163265306109224,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.q",
+          "expected": 0.02,
+          "obtained": 0.02,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.portadores",
+          "expected": 0.0392,
+          "obtained": 0.0392,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_port",
+          "expected": 25.510204081632654,
+          "obtained": 25.510204081632654,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.risco",
+          "expected": 0.0098,
+          "obtained": 0.0098,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_risco",
+          "expected": 102.04081632653062,
+          "obtained": 102.04081632653062,
+          "tolerance": 1.0204081632653062e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1 em 102",
+          "obtained": "1 em 102",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "por gestação",
+          "obtained": "por gestação",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+      "input": {
+        "incid": 2500,
+        "p1": "irmao",
+        "p2": "pop"
+      },
+      "obtained": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 153",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.006533333333333333,
+          "n_risco": 153.06122448979593
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.n_risco",
+          "expected": 153.06,
+          "obtained": 153.06122448979593,
+          "tolerance": 0.05,
+          "difference": 0.0012244897959305945,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.q",
+          "expected": 0.02,
+          "obtained": 0.02,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.portadores",
+          "expected": 0.0392,
+          "obtained": 0.0392,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_port",
+          "expected": 25.510204081632654,
+          "obtained": 25.510204081632654,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.risco",
+          "expected": 0.006533333333333333,
+          "obtained": 0.006533333333333333,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_risco",
+          "expected": 153.06122448979593,
+          "obtained": 153.06122448979593,
+          "tolerance": 1.5306122448979592e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1 em 153",
+          "obtained": "1 em 153",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "por gestação",
+          "obtained": "por gestação",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Ambos portadores: 1 em 4",
+      "input": {
+        "incid": 10000,
+        "p1": "port",
+        "p2": "port"
+      },
+      "obtained": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 4",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.5050505050505,
+          "risco": 0.25,
+          "n_risco": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "1 em 4",
+          "obtained": "1 em 4",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.risco",
+          "expected": 0.25,
+          "obtained": 0.25,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.q",
+          "expected": 0.01,
+          "obtained": 0.01,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.portadores",
+          "expected": 0.0198,
+          "obtained": 0.0198,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_port",
+          "expected": 50.5050505050505,
+          "obtained": 50.5050505050505,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.risco",
+          "expected": 0.25,
+          "obtained": 0.25,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_risco",
+          "expected": 4,
+          "obtained": 4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1 em 4",
+          "obtained": "1 em 4",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "por gestação",
+          "obtained": "por gestação",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+      "input": {
+        "incid": 10000,
+        "p1": "pop",
+        "p2": "pop"
+      },
+      "obtained": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 10.203",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.5050505050505,
+          "risco": 0.00009801000000000002,
+          "n_risco": 10203.040506070807
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.q",
+          "expected": 0.01,
+          "obtained": 0.01,
+          "tolerance": 0.001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.portadores",
+          "expected": 0.0198,
+          "obtained": 0.0198,
+          "tolerance": 0.001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n_port",
+          "expected": 50.505,
+          "obtained": 50.5050505050505,
+          "tolerance": 0.001,
+          "difference": 0.00005050505049553067,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.q",
+          "expected": 0.01,
+          "obtained": 0.01,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.portadores",
+          "expected": 0.0198,
+          "obtained": 0.0198,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_port",
+          "expected": 50.5050505050505,
+          "obtained": 50.5050505050505,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.risco",
+          "expected": 0.00009801000000000002,
+          "obtained": 0.00009801000000000002,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n_risco",
+          "expected": 10203.040506070807,
+          "obtained": 10203.040506070807,
+          "tolerance": 1.0203040506070808e-8,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1 em 10.203",
+          "obtained": "1 em 10.203",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "por gestação",
+          "obtained": "por gestação",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 20,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

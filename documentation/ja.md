@@ -1,0 +1,87 @@
+<!-- ELUCENIA technical documentation · hardy-weinberg · ja · no clinical/professional/rights approval -->
+
+# Hardy-Weinberg平衡
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/hardy-weinberg)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 疾患頻度：何人に1人が罹患するか
+
+`incid`
+
+出生数 · 範囲: 100–1000000
+
+### パートナー1
+
+`p1`
+
+- `pop` — 一般集団
+- `port` — 確認された保因者
+- `irmao` — 罹患者の非罹患同胞
+
+### パートナー2
+
+`p2`
+
+- `pop` — 一般集団
+- `port` — 確認された保因者
+- `irmao` — 罹患者の非罹患同胞
+
+## 方法の版
+
+Hardy–Weinberg 1908：p²+2pq+q²、常染色体劣性遺伝、非罹患同胞2/3、夫婦のリスク×1/4
+
+## 記載された計算式
+
+平衡時：p² + 2pq + q² = 1。qは病的アレル頻度、p = 1 − qです。
+
+発症率 = q²、したがってq = √発症率。
+
+保因者（ヘテロ接合体）頻度 = 2pq（qが小さい場合≈ 2q）。
+
+各配偶者の保因確率：一般集団 = 2pq、保因者確認済み = 1、罹患者の非罹患同胞 = 2/3。
+
+各妊娠のリスク = P(配偶者1が保因者) × P(配偶者2が保因者) × 1/4。
+
+## 限界・対象集団
+
+集団の計算は、二つの対立遺伝子をもつ常染色体上の一遺伝子座が Hardy–Weinberg 平衡にあることを仮定します。無作為交配と理想的に非常に大きな集団は前提であり、計算結果ではありません。q² を疾患頻度として使うには、対象の劣性遺伝モデルとの整合が必要です。家族内リスク 25% は両親が保因者であることを前提とし、非罹患の同胞についての 2/3 はその状況での条件付き確率です。これらをあらゆる遺伝性疾患に当てはめたり、個人の診断と解釈したりしないでください。
+
+## 参考文献
+
+- [Hardy GH. Mendelian proportions in a mixed population. Science, 1908.](https://doi.org/10.1126/science.28.706.49)
+
+- [Mayo O. A century of Hardy-Weinberg equilibrium. Twin Res Hum Genet, 2008.](https://doi.org/10.1375/twin.11.3.249)
+
+- [GeneReviews carrier box,revised2016](https://www.ncbi.nlm.nih.gov/books/NBK5191/box/further_illus-19/)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026
