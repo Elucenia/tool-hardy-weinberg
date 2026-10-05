@@ -1,0 +1,1252 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "hardy-weinberg",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/hardy-weinberg/calculator.js",
+    "sha256": "122bc955db05f68c74eedf25184e4631ba72f06474efdda484c6feffeb3c48b3",
+    "bytes": 5134
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "hardy-weinberg",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+      "originalInput": {
+        "incid": 2500,
+        "p1": "pop",
+        "p2": "pop"
+      },
+      "input": {
+        "incid": 2500,
+        "p1": "pop",
+        "p2": "pop"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "q": 0.02,
+          "n_port": 25.51,
+          "n_risco": 2603.1
+        },
+        "tol": 0.5,
+        "level": "info"
+      },
+      "recordedResult": {
+        "main": [
+          "1 em 2.603",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.00038416,
+          "n_risco": 2603.082049146189
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "incid": 2500,
+            "p1": "pop",
+            "p2": "pop"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+          "startedAt": "2026-10-05T17:36:51.157Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "hardy-weinberg",
+              "main": [
+                "1 em 2.603",
+                "por gestação"
+              ],
+              "label": "Risco de filho afetado (autossômica recessiva)",
+              "raw": {
+                "q": 0.02,
+                "portadores": 0.0392,
+                "n_port": 25.510204081632654,
+                "risco": 0.00038416,
+                "n_risco": 2603.082049146189
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "dd74182b808d202b5adc2569e88da8665ee9743a577510fdd4fff7ffdedd3f44",
+          "bytes": 280,
+          "elapsedMs": 3.8959999999933643
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "startedAt": "2026-10-05T17:36:51.157Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "hardy-weinberg",
+            "main": [
+              "1 em 2.603",
+              "por gestação"
+            ],
+            "label": "Risco de filho afetado (autossômica recessiva)",
+            "raw": {
+              "q": 0.02,
+              "portadores": 0.0392,
+              "n_port": 25.510204081632654,
+              "risco": 0.00038416,
+              "n_risco": 2603.082049146189
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "dd74182b808d202b5adc2569e88da8665ee9743a577510fdd4fff7ffdedd3f44",
+        "bytes": 280,
+        "elapsedMs": 3.8959999999933643
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.q",
+            "expected": 0.02,
+            "obtained": 0.02,
+            "tolerance": 0.5,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.n_port",
+            "expected": 25.51,
+            "obtained": 25.510204081632654,
+            "tolerance": 0.5,
+            "difference": 0.0002040816326527306,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.n_risco",
+            "expected": 2603.1,
+            "obtained": 2603.082049146189,
+            "tolerance": 0.5,
+            "difference": 0.017950853810816625,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.q",
+            "expected": 0.02,
+            "obtained": 0.02,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.portadores",
+            "expected": 0.0392,
+            "obtained": 0.0392,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_port",
+            "expected": 25.510204081632654,
+            "obtained": 25.510204081632654,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risco",
+            "expected": 0.00038416,
+            "obtained": 0.00038416,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_risco",
+            "expected": 2603.082049146189,
+            "obtained": 2603.082049146189,
+            "tolerance": 2.603082049146189e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1 em 2.603",
+            "obtained": "1 em 2.603",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "por gestação",
+            "obtained": "por gestação",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "hardy-weinberg",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+      "originalInput": {
+        "incid": 2500,
+        "p1": "port",
+        "p2": "pop"
+      },
+      "input": {
+        "incid": 2500,
+        "p1": "port",
+        "p2": "pop"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "n_risco": 102.04
+        },
+        "tol": 0.05
+      },
+      "recordedResult": {
+        "main": [
+          "1 em 102",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.0098,
+          "n_risco": 102.04081632653062
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "incid": 2500,
+            "p1": "port",
+            "p2": "pop"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+          "startedAt": "2026-10-05T17:36:51.468Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "hardy-weinberg",
+              "main": [
+                "1 em 102",
+                "por gestação"
+              ],
+              "label": "Risco de filho afetado (autossômica recessiva)",
+              "raw": {
+                "q": 0.02,
+                "portadores": 0.0392,
+                "n_port": 25.510204081632654,
+                "risco": 0.0098,
+                "n_risco": 102.04081632653062
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1550161dd037b91046de0238c66276bed121362a7caa74fa4ab4a28e6b430851",
+          "bytes": 275,
+          "elapsedMs": 8.4603000000061
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "startedAt": "2026-10-05T17:36:51.468Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "hardy-weinberg",
+            "main": [
+              "1 em 102",
+              "por gestação"
+            ],
+            "label": "Risco de filho afetado (autossômica recessiva)",
+            "raw": {
+              "q": 0.02,
+              "portadores": 0.0392,
+              "n_port": 25.510204081632654,
+              "risco": 0.0098,
+              "n_risco": 102.04081632653062
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1550161dd037b91046de0238c66276bed121362a7caa74fa4ab4a28e6b430851",
+        "bytes": 275,
+        "elapsedMs": 8.4603000000061
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.n_risco",
+            "expected": 102.04,
+            "obtained": 102.04081632653062,
+            "tolerance": 0.05,
+            "difference": 0.0008163265306109224,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.q",
+            "expected": 0.02,
+            "obtained": 0.02,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.portadores",
+            "expected": 0.0392,
+            "obtained": 0.0392,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_port",
+            "expected": 25.510204081632654,
+            "obtained": 25.510204081632654,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risco",
+            "expected": 0.0098,
+            "obtained": 0.0098,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_risco",
+            "expected": 102.04081632653062,
+            "obtained": 102.04081632653062,
+            "tolerance": 1.0204081632653062e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1 em 102",
+            "obtained": "1 em 102",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "por gestação",
+            "obtained": "por gestação",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "hardy-weinberg",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+      "originalInput": {
+        "incid": 2500,
+        "p1": "irmao",
+        "p2": "pop"
+      },
+      "input": {
+        "incid": 2500,
+        "p1": "irmao",
+        "p2": "pop"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "n_risco": 153.06
+        },
+        "tol": 0.05
+      },
+      "recordedResult": {
+        "main": [
+          "1 em 153",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.006533333333333333,
+          "n_risco": 153.06122448979593
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "incid": 2500,
+            "p1": "irmao",
+            "p2": "pop"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+          "startedAt": "2026-10-05T17:36:51.778Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "hardy-weinberg",
+              "main": [
+                "1 em 153",
+                "por gestação"
+              ],
+              "label": "Risco de filho afetado (autossômica recessiva)",
+              "raw": {
+                "q": 0.02,
+                "portadores": 0.0392,
+                "n_port": 25.510204081632654,
+                "risco": 0.006533333333333333,
+                "n_risco": 153.06122448979593
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a8dbf9dca83b6bb2f6d32f3233e629ee4a9f833ad2d698195a4241dd30b75c61",
+          "bytes": 289,
+          "elapsedMs": 3.019700000004377
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "startedAt": "2026-10-05T17:36:51.778Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "hardy-weinberg",
+            "main": [
+              "1 em 153",
+              "por gestação"
+            ],
+            "label": "Risco de filho afetado (autossômica recessiva)",
+            "raw": {
+              "q": 0.02,
+              "portadores": 0.0392,
+              "n_port": 25.510204081632654,
+              "risco": 0.006533333333333333,
+              "n_risco": 153.06122448979593
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a8dbf9dca83b6bb2f6d32f3233e629ee4a9f833ad2d698195a4241dd30b75c61",
+        "bytes": 289,
+        "elapsedMs": 3.019700000004377
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.n_risco",
+            "expected": 153.06,
+            "obtained": 153.06122448979593,
+            "tolerance": 0.05,
+            "difference": 0.0012244897959305945,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.q",
+            "expected": 0.02,
+            "obtained": 0.02,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.portadores",
+            "expected": 0.0392,
+            "obtained": 0.0392,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_port",
+            "expected": 25.510204081632654,
+            "obtained": 25.510204081632654,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risco",
+            "expected": 0.006533333333333333,
+            "obtained": 0.006533333333333333,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_risco",
+            "expected": 153.06122448979593,
+            "obtained": 153.06122448979593,
+            "tolerance": 1.5306122448979592e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1 em 153",
+            "obtained": "1 em 153",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "por gestação",
+            "obtained": "por gestação",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "hardy-weinberg",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Ambos portadores: 1 em 4",
+      "originalInput": {
+        "incid": 10000,
+        "p1": "port",
+        "p2": "port"
+      },
+      "input": {
+        "incid": 10000,
+        "p1": "port",
+        "p2": "port"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "risco": 0.25
+        },
+        "main": "1 em 4"
+      },
+      "recordedResult": {
+        "main": [
+          "1 em 4",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.5050505050505,
+          "risco": 0.25,
+          "n_risco": 4
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "incid": 10000,
+            "p1": "port",
+            "p2": "port"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+          "startedAt": "2026-10-05T17:36:52.088Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "hardy-weinberg",
+              "main": [
+                "1 em 4",
+                "por gestação"
+              ],
+              "label": "Risco de filho afetado (autossômica recessiva)",
+              "raw": {
+                "q": 0.01,
+                "portadores": 0.0198,
+                "n_port": 50.5050505050505,
+                "risco": 0.25,
+                "n_risco": 4
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "34d694ca0e691054ae02888441be5a82808aa08548b0a917e2545a458227f6c9",
+          "bytes": 252,
+          "elapsedMs": 2.7691999999951804
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "startedAt": "2026-10-05T17:36:52.088Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "hardy-weinberg",
+            "main": [
+              "1 em 4",
+              "por gestação"
+            ],
+            "label": "Risco de filho afetado (autossômica recessiva)",
+            "raw": {
+              "q": 0.01,
+              "portadores": 0.0198,
+              "n_port": 50.5050505050505,
+              "risco": 0.25,
+              "n_risco": 4
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "34d694ca0e691054ae02888441be5a82808aa08548b0a917e2545a458227f6c9",
+        "bytes": 252,
+        "elapsedMs": 2.7691999999951804
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "1 em 4",
+            "obtained": "1 em 4",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.risco",
+            "expected": 0.25,
+            "obtained": 0.25,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.q",
+            "expected": 0.01,
+            "obtained": 0.01,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.portadores",
+            "expected": 0.0198,
+            "obtained": 0.0198,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_port",
+            "expected": 50.5050505050505,
+            "obtained": 50.5050505050505,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risco",
+            "expected": 0.25,
+            "obtained": 0.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_risco",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1 em 4",
+            "obtained": "1 em 4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "por gestação",
+            "obtained": "por gestação",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "hardy-weinberg",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+      "originalInput": {
+        "incid": 10000,
+        "p1": "pop",
+        "p2": "pop"
+      },
+      "input": {
+        "incid": 10000,
+        "p1": "pop",
+        "p2": "pop"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.505
+        },
+        "tol": 0.001
+      },
+      "recordedResult": {
+        "main": [
+          "1 em 10.203",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.5050505050505,
+          "risco": 0.00009801000000000002,
+          "n_risco": 10203.040506070807
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "incid": 10000,
+            "p1": "pop",
+            "p2": "pop"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+          "startedAt": "2026-10-05T17:36:52.402Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "hardy-weinberg",
+              "main": [
+                "1 em 10.203",
+                "por gestação"
+              ],
+              "label": "Risco de filho afetado (autossômica recessiva)",
+              "raw": {
+                "q": 0.01,
+                "portadores": 0.0198,
+                "n_port": 50.5050505050505,
+                "risco": 0.00009801000000000002,
+                "n_risco": 10203.040506070807
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6183e4dd549c2158cb7bd691fa8c9d0bfbb2e023ade7b8ad9400b4c9a12dd870",
+          "bytes": 292,
+          "elapsedMs": 6.8937000000005355
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/hardy-weinberg/calculate",
+        "startedAt": "2026-10-05T17:36:52.402Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "hardy-weinberg",
+            "main": [
+              "1 em 10.203",
+              "por gestação"
+            ],
+            "label": "Risco de filho afetado (autossômica recessiva)",
+            "raw": {
+              "q": 0.01,
+              "portadores": 0.0198,
+              "n_port": 50.5050505050505,
+              "risco": 0.00009801000000000002,
+              "n_risco": 10203.040506070807
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6183e4dd549c2158cb7bd691fa8c9d0bfbb2e023ade7b8ad9400b4c9a12dd870",
+        "bytes": 292,
+        "elapsedMs": 6.8937000000005355
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.q",
+            "expected": 0.01,
+            "obtained": 0.01,
+            "tolerance": 0.001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.portadores",
+            "expected": 0.0198,
+            "obtained": 0.0198,
+            "tolerance": 0.001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.n_port",
+            "expected": 50.505,
+            "obtained": 50.5050505050505,
+            "tolerance": 0.001,
+            "difference": 0.00005050505049553067,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.q",
+            "expected": 0.01,
+            "obtained": 0.01,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.portadores",
+            "expected": 0.0198,
+            "obtained": 0.0198,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_port",
+            "expected": 50.5050505050505,
+            "obtained": 50.5050505050505,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risco",
+            "expected": 0.00009801000000000002,
+            "obtained": 0.00009801000000000002,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n_risco",
+            "expected": 10203.040506070807,
+            "obtained": 10203.040506070807,
+            "tolerance": 1.0203040506070808e-8,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1 em 10.203",
+            "obtained": "1 em 10.203",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "por gestação",
+            "obtained": "por gestação",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
