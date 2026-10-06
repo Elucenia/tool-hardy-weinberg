@@ -1,0 +1,391 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "hardy-weinberg",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "e6e9937e3559419b9b756fa4133615d61c1af7b4",
+    "oldEngineSha256": "122bc955db05f68c74eedf25184e4631ba72f06474efdda484c6feffeb3c48b3",
+    "currentEngineSha256": "d57b69e605a85c6ee42f929fbc55bc31f91f7a326e657833ced137508cc3cb5b"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+      "input": {
+        "incid": 2500,
+        "p1": "pop",
+        "p2": "pop"
+      },
+      "publicOutput": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 2.603",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.00038416,
+          "n_risco": 2603.082049146189
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "q": 0.02,
+          "n_port": 25.51,
+          "n_risco": 2603.1
+        },
+        "tol": 0.5,
+        "level": "info"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1 em 2.603",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "level": "info",
+        "verdict": "Frequência de portadores na população: 1 em 26",
+        "rows": [
+          [
+            "Frequência do alelo (q)",
+            "2,00%"
+          ],
+          [
+            "Frequência de portadores (2pq)",
+            "3,92% (1 em 26)"
+          ],
+          [
+            "Risco do casal por gestação",
+            "0,038%"
+          ]
+        ],
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.00038416,
+          "n_risco": 2603.082049146189
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+      "input": {
+        "incid": 2500,
+        "p1": "port",
+        "p2": "pop"
+      },
+      "publicOutput": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 102",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.0098,
+          "n_risco": 102.04081632653062
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "n_risco": 102.04
+        },
+        "tol": 0.05
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1 em 102",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "level": "info",
+        "verdict": "Frequência de portadores na população: 1 em 26",
+        "rows": [
+          [
+            "Frequência do alelo (q)",
+            "2,00%"
+          ],
+          [
+            "Frequência de portadores (2pq)",
+            "3,92% (1 em 26)"
+          ],
+          [
+            "Risco do casal por gestação",
+            "0,980%"
+          ]
+        ],
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.0098,
+          "n_risco": 102.04081632653062
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+      "input": {
+        "incid": 2500,
+        "p1": "irmao",
+        "p2": "pop"
+      },
+      "publicOutput": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 153",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.006533333333333333,
+          "n_risco": 153.06122448979593
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "n_risco": 153.06
+        },
+        "tol": 0.05
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1 em 153",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "level": "info",
+        "verdict": "Frequência de portadores na população: 1 em 26",
+        "rows": [
+          [
+            "Frequência do alelo (q)",
+            "2,00%"
+          ],
+          [
+            "Frequência de portadores (2pq)",
+            "3,92% (1 em 26)"
+          ],
+          [
+            "Risco do casal por gestação",
+            "0,653%"
+          ]
+        ],
+        "raw": {
+          "q": 0.02,
+          "portadores": 0.0392,
+          "n_port": 25.510204081632654,
+          "risco": 0.006533333333333333,
+          "n_risco": 153.06122448979593
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Ambos portadores: 1 em 4",
+      "input": {
+        "incid": 10000,
+        "p1": "port",
+        "p2": "port"
+      },
+      "publicOutput": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 4",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.5050505050505,
+          "risco": 0.25,
+          "n_risco": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "risco": 0.25
+        },
+        "main": "1 em 4"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1 em 4",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "level": "info",
+        "verdict": "Frequência de portadores na população: 1 em 51",
+        "rows": [
+          [
+            "Frequência do alelo (q)",
+            "1,00%"
+          ],
+          [
+            "Frequência de portadores (2pq)",
+            "1,98% (1 em 51)"
+          ],
+          [
+            "Risco do casal por gestação",
+            "25,000%"
+          ]
+        ],
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.5050505050505,
+          "risco": 0.25,
+          "n_risco": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+      "input": {
+        "incid": 10000,
+        "p1": "pop",
+        "p2": "pop"
+      },
+      "publicOutput": {
+        "id": "hardy-weinberg",
+        "main": [
+          "1 em 10.203",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.5050505050505,
+          "risco": 0.00009801000000000002,
+          "n_risco": 10203.040506070807
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.505
+        },
+        "tol": 0.001
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1 em 10.203",
+          "por gestação"
+        ],
+        "label": "Risco de filho afetado (autossômica recessiva)",
+        "level": "info",
+        "verdict": "Frequência de portadores na população: 1 em 51",
+        "rows": [
+          [
+            "Frequência do alelo (q)",
+            "1,00%"
+          ],
+          [
+            "Frequência de portadores (2pq)",
+            "1,98% (1 em 51)"
+          ],
+          [
+            "Risco do casal por gestação",
+            "0,010%"
+          ]
+        ],
+        "raw": {
+          "q": 0.01,
+          "portadores": 0.0198,
+          "n_port": 50.5050505050505,
+          "risco": 0.00009801000000000002,
+          "n_risco": 10203.040506070807
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

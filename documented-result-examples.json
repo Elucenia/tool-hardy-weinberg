@@ -1,0 +1,3212 @@
+{
+  "id": "hardy-weinberg",
+  "implementationVersion": "hardy-weinberg@native-2026-10-05+d57b69e605a8",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequência do alelo (q)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequência de portadores (2pq)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,92% (1 em 26)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risco do casal por gestação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,038%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequência de portadores na população: 1 em 26",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequência do alelo (q)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequência de portadores (2pq)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,92% (1 em 26)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risco do casal por gestação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,980%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequência de portadores na população: 1 em 26",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequência do alelo (q)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequência de portadores (2pq)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,92% (1 em 26)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risco do casal por gestação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,653%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequência de portadores na população: 1 em 26",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequência do alelo (q)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequência de portadores (2pq)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,98% (1 em 51)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risco do casal por gestação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "25,000%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequência de portadores na população: 1 em 51",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequência do alelo (q)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequência de portadores (2pq)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,98% (1 em 51)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risco do casal por gestação",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,010%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequência de portadores na população: 1 em 51",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allele frequency (q)",
+                "locale": "en",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Carrier frequency (2pq)",
+                "locale": "en",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92% (1 in 26)",
+                "locale": "en",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Couple risk per pregnancy",
+                "locale": "en",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.038%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Carrier frequency in the population: 1 in 26",
+            "locale": "en",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allele frequency (q)",
+                "locale": "en",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Carrier frequency (2pq)",
+                "locale": "en",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92% (1 in 26)",
+                "locale": "en",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Couple risk per pregnancy",
+                "locale": "en",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.980%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Carrier frequency in the population: 1 in 26",
+            "locale": "en",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allele frequency (q)",
+                "locale": "en",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Carrier frequency (2pq)",
+                "locale": "en",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92% (1 in 26)",
+                "locale": "en",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Couple risk per pregnancy",
+                "locale": "en",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.653%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Carrier frequency in the population: 1 in 26",
+            "locale": "en",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allele frequency (q)",
+                "locale": "en",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1.00%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Carrier frequency (2pq)",
+                "locale": "en",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1.98% (1 in 51)",
+                "locale": "en",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Couple risk per pregnancy",
+                "locale": "en",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "25.000%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Carrier frequency in the population: 1 in 51",
+            "locale": "en",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allele frequency (q)",
+                "locale": "en",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1.00%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Carrier frequency (2pq)",
+                "locale": "en",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1.98% (1 in 51)",
+                "locale": "en",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Couple risk per pregnancy",
+                "locale": "en",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.010%",
+                "locale": "en",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Carrier frequency in the population: 1 in 51",
+            "locale": "en",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frecuencia del alelo (q)",
+                "locale": "es",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frecuencia de portadores (2pq)",
+                "locale": "es",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 en 26)",
+                "locale": "es",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Riesgo de la pareja por embarazo",
+                "locale": "es",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,038%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frecuencia de portadores en la población: 1 en 26",
+            "locale": "es",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frecuencia del alelo (q)",
+                "locale": "es",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frecuencia de portadores (2pq)",
+                "locale": "es",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 en 26)",
+                "locale": "es",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Riesgo de la pareja por embarazo",
+                "locale": "es",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,980%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frecuencia de portadores en la población: 1 en 26",
+            "locale": "es",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frecuencia del alelo (q)",
+                "locale": "es",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frecuencia de portadores (2pq)",
+                "locale": "es",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 en 26)",
+                "locale": "es",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Riesgo de la pareja por embarazo",
+                "locale": "es",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,653%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frecuencia de portadores en la población: 1 en 26",
+            "locale": "es",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frecuencia del alelo (q)",
+                "locale": "es",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frecuencia de portadores (2pq)",
+                "locale": "es",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1,98% (1 en 51)",
+                "locale": "es",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Riesgo de la pareja por embarazo",
+                "locale": "es",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "25,000%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frecuencia de portadores en la población: 1 en 51",
+            "locale": "es",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frecuencia del alelo (q)",
+                "locale": "es",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frecuencia de portadores (2pq)",
+                "locale": "es",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1,98% (1 en 51)",
+                "locale": "es",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Riesgo de la pareja por embarazo",
+                "locale": "es",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,010%",
+                "locale": "es",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frecuencia de portadores en la población: 1 en 51",
+            "locale": "es",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fréquence allélique (q)",
+                "locale": "fr",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fréquence des porteurs (2pq)",
+                "locale": "fr",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92 % (1 sur 26)",
+                "locale": "fr",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risque du couple par grossesse",
+                "locale": "fr",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,038%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fréquence des porteurs dans la population : 1 sur 26",
+            "locale": "fr",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fréquence allélique (q)",
+                "locale": "fr",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fréquence des porteurs (2pq)",
+                "locale": "fr",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92 % (1 sur 26)",
+                "locale": "fr",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risque du couple par grossesse",
+                "locale": "fr",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,980%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fréquence des porteurs dans la population : 1 sur 26",
+            "locale": "fr",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fréquence allélique (q)",
+                "locale": "fr",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fréquence des porteurs (2pq)",
+                "locale": "fr",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92 % (1 sur 26)",
+                "locale": "fr",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risque du couple par grossesse",
+                "locale": "fr",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,653%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fréquence des porteurs dans la population : 1 sur 26",
+            "locale": "fr",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fréquence allélique (q)",
+                "locale": "fr",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fréquence des porteurs (2pq)",
+                "locale": "fr",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1,98 % (1 sur 51)",
+                "locale": "fr",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risque du couple par grossesse",
+                "locale": "fr",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "25,000%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fréquence des porteurs dans la population : 1 sur 51",
+            "locale": "fr",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Fréquence allélique (q)",
+                "locale": "fr",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Fréquence des porteurs (2pq)",
+                "locale": "fr",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1,98 % (1 sur 51)",
+                "locale": "fr",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Risque du couple par grossesse",
+                "locale": "fr",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,010%",
+                "locale": "fr",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fréquence des porteurs dans la population : 1 sur 51",
+            "locale": "fr",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allelfrequenz (q)",
+                "locale": "de",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Trägerfrequenz (2pq)",
+                "locale": "de",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 von 26)",
+                "locale": "de",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Paarrisiko pro Schwangerschaft",
+                "locale": "de",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,038%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Trägerfrequenz in der Bevölkerung: 1 von 26",
+            "locale": "de",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allelfrequenz (q)",
+                "locale": "de",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Trägerfrequenz (2pq)",
+                "locale": "de",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 von 26)",
+                "locale": "de",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Paarrisiko pro Schwangerschaft",
+                "locale": "de",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,980%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Trägerfrequenz in der Bevölkerung: 1 von 26",
+            "locale": "de",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allelfrequenz (q)",
+                "locale": "de",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Trägerfrequenz (2pq)",
+                "locale": "de",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 von 26)",
+                "locale": "de",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Paarrisiko pro Schwangerschaft",
+                "locale": "de",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,653%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Trägerfrequenz in der Bevölkerung: 1 von 26",
+            "locale": "de",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allelfrequenz (q)",
+                "locale": "de",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Trägerfrequenz (2pq)",
+                "locale": "de",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1,98% (1 von 51)",
+                "locale": "de",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Paarrisiko pro Schwangerschaft",
+                "locale": "de",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "25,000%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Trägerfrequenz in der Bevölkerung: 1 von 51",
+            "locale": "de",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Allelfrequenz (q)",
+                "locale": "de",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Trägerfrequenz (2pq)",
+                "locale": "de",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1,98% (1 von 51)",
+                "locale": "de",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Paarrisiko pro Schwangerschaft",
+                "locale": "de",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,010%",
+                "locale": "de",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Trägerfrequenz in der Bevölkerung: 1 von 51",
+            "locale": "de",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequenza allelica (q)",
+                "locale": "it",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequenza dei portatori (2pq)",
+                "locale": "it",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 su 26)",
+                "locale": "it",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rischio della coppia per gravidanza",
+                "locale": "it",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,038%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequenza dei portatori nella popolazione: 1 su 26",
+            "locale": "it",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequenza allelica (q)",
+                "locale": "it",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequenza dei portatori (2pq)",
+                "locale": "it",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 su 26)",
+                "locale": "it",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rischio della coppia per gravidanza",
+                "locale": "it",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,980%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequenza dei portatori nella popolazione: 1 su 26",
+            "locale": "it",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequenza allelica (q)",
+                "locale": "it",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2,00%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequenza dei portatori (2pq)",
+                "locale": "it",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3,92% (1 su 26)",
+                "locale": "it",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rischio della coppia per gravidanza",
+                "locale": "it",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,653%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequenza dei portatori nella popolazione: 1 su 26",
+            "locale": "it",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequenza allelica (q)",
+                "locale": "it",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequenza dei portatori (2pq)",
+                "locale": "it",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1,98% (1 su 51)",
+                "locale": "it",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rischio della coppia per gravidanza",
+                "locale": "it",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "25,000%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequenza dei portatori nella popolazione: 1 su 51",
+            "locale": "it",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Frequenza allelica (q)",
+                "locale": "it",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1,00%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Frequenza dei portatori (2pq)",
+                "locale": "it",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1,98% (1 su 51)",
+                "locale": "it",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rischio della coppia per gravidanza",
+                "locale": "it",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0,010%",
+                "locale": "it",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frequenza dei portatori nella popolazione: 1 su 51",
+            "locale": "it",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "تواتر الأليل (q)",
+                "locale": "ar",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "٢٫٠٠%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "تواتر الحاملين (2pq)",
+                "locale": "ar",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "٣٫٩٢% (1 من كل ٢٦)",
+                "locale": "ar",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "خطر الزوجين لكل حمل",
+                "locale": "ar",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "٠٫٠٣٨%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تواتر الحاملين في السكان: 1 من كل ٢٦",
+            "locale": "ar",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "تواتر الأليل (q)",
+                "locale": "ar",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "٢٫٠٠%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "تواتر الحاملين (2pq)",
+                "locale": "ar",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "٣٫٩٢% (1 من كل ٢٦)",
+                "locale": "ar",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "خطر الزوجين لكل حمل",
+                "locale": "ar",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "٠٫٩٨٠%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تواتر الحاملين في السكان: 1 من كل ٢٦",
+            "locale": "ar",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "تواتر الأليل (q)",
+                "locale": "ar",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "٢٫٠٠%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "تواتر الحاملين (2pq)",
+                "locale": "ar",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "٣٫٩٢% (1 من كل ٢٦)",
+                "locale": "ar",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "خطر الزوجين لكل حمل",
+                "locale": "ar",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "٠٫٦٥٣%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تواتر الحاملين في السكان: 1 من كل ٢٦",
+            "locale": "ar",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "تواتر الأليل (q)",
+                "locale": "ar",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "١٫٠٠%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "تواتر الحاملين (2pq)",
+                "locale": "ar",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "١٫٩٨% (1 من كل ٥١)",
+                "locale": "ar",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "خطر الزوجين لكل حمل",
+                "locale": "ar",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "٢٥٫٠٠٠%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تواتر الحاملين في السكان: 1 من كل ٥١",
+            "locale": "ar",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "تواتر الأليل (q)",
+                "locale": "ar",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "١٫٠٠%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "تواتر الحاملين (2pq)",
+                "locale": "ar",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "١٫٩٨% (1 من كل ٥١)",
+                "locale": "ar",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "خطر الزوجين لكل حمل",
+                "locale": "ar",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "٠٫٠١٠%",
+                "locale": "ar",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تواتر الحاملين في السكان: 1 من كل ٥١",
+            "locale": "ar",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "等位基因频率（q）",
+                "locale": "zh",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "携带者频率（2pq）",
+                "locale": "zh",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92%（1/26）",
+                "locale": "zh",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "每次妊娠的夫妻风险",
+                "locale": "zh",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.038%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "人群中的携带者频率：1/26",
+            "locale": "zh",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "等位基因频率（q）",
+                "locale": "zh",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "携带者频率（2pq）",
+                "locale": "zh",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92%（1/26）",
+                "locale": "zh",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "每次妊娠的夫妻风险",
+                "locale": "zh",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.980%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "人群中的携带者频率：1/26",
+            "locale": "zh",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "等位基因频率（q）",
+                "locale": "zh",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "携带者频率（2pq）",
+                "locale": "zh",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92%（1/26）",
+                "locale": "zh",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "每次妊娠的夫妻风险",
+                "locale": "zh",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.653%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "人群中的携带者频率：1/26",
+            "locale": "zh",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "等位基因频率（q）",
+                "locale": "zh",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1.00%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "携带者频率（2pq）",
+                "locale": "zh",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1.98%（1/51）",
+                "locale": "zh",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "每次妊娠的夫妻风险",
+                "locale": "zh",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "25.000%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "人群中的携带者频率：1/51",
+            "locale": "zh",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "等位基因频率（q）",
+                "locale": "zh",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1.00%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "携带者频率（2pq）",
+                "locale": "zh",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1.98%（1/51）",
+                "locale": "zh",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "每次妊娠的夫妻风险",
+                "locale": "zh",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.010%",
+                "locale": "zh",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "人群中的携带者频率：1/51",
+            "locale": "zh",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "対立遺伝子頻度（q）",
+                "locale": "ja",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "保因者頻度（2pq）",
+                "locale": "ja",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92%（26人に1人）",
+                "locale": "ja",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "妊娠ごとの夫婦リスク",
+                "locale": "ja",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.038%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "集団における保因者頻度：26人に1人",
+            "locale": "ja",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "対立遺伝子頻度（q）",
+                "locale": "ja",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "保因者頻度（2pq）",
+                "locale": "ja",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92%（26人に1人）",
+                "locale": "ja",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "妊娠ごとの夫婦リスク",
+                "locale": "ja",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.980%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "集団における保因者頻度：26人に1人",
+            "locale": "ja",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "対立遺伝子頻度（q）",
+                "locale": "ja",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "保因者頻度（2pq）",
+                "locale": "ja",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92%（26人に1人）",
+                "locale": "ja",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "妊娠ごとの夫婦リスク",
+                "locale": "ja",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.653%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "集団における保因者頻度：26人に1人",
+            "locale": "ja",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "対立遺伝子頻度（q）",
+                "locale": "ja",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1.00%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "保因者頻度（2pq）",
+                "locale": "ja",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1.98%（51人に1人）",
+                "locale": "ja",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "妊娠ごとの夫婦リスク",
+                "locale": "ja",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "25.000%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "集団における保因者頻度：51人に1人",
+            "locale": "ja",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "対立遺伝子頻度（q）",
+                "locale": "ja",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1.00%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "保因者頻度（2pq）",
+                "locale": "ja",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1.98%（51人に1人）",
+                "locale": "ja",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "妊娠ごとの夫婦リスク",
+                "locale": "ja",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.010%",
+                "locale": "ja",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "集団における保因者頻度：51人に1人",
+            "locale": "ja",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Doença 1:2.500 (q = 0,02; 2pq = 0,0392 ≈ 1 em 25,5); casal da população: 0,0392² × 1/4 = 1 em 2.603",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एलील आवृत्ति (q)",
+                "locale": "hi",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "वाहक आवृत्ति (2pq)",
+                "locale": "hi",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92% (26 में 1)",
+                "locale": "hi",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्रति गर्भावस्था दंपति जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.038%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.038
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "जनसंख्या में वाहक आवृत्ति: 26 में 1",
+            "locale": "hi",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, um portador confirmado: 0,0392 × 1/4 = 1 em 102",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एलील आवृत्ति (q)",
+                "locale": "hi",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "वाहक आवृत्ति (2pq)",
+                "locale": "hi",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92% (26 में 1)",
+                "locale": "hi",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्रति गर्भावस्था दंपति जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.980%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.98
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "जनसंख्या में वाहक आवृत्ति: 26 में 1",
+            "locale": "hi",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:2.500, irmão de afetado com parceiro da população: 2/3 × 0,0392 × 1/4 = 1 em 153",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एलील आवृत्ति (q)",
+                "locale": "hi",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "2.00%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "वाहक आवृत्ति (2pq)",
+                "locale": "hi",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "3.92% (26 में 1)",
+                "locale": "hi",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  3.92,
+                  26
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्रति गर्भावस्था दंपति जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.653%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.653
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "जनसंख्या में वाहक आवृत्ति: 26 में 1",
+            "locale": "hi",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              26
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Ambos portadores: 1 em 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एलील आवृत्ति (q)",
+                "locale": "hi",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1.00%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "वाहक आवृत्ति (2pq)",
+                "locale": "hi",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1.98% (51 में 1)",
+                "locale": "hi",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्रति गर्भावस्था दंपति जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "25.000%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "जनसंख्या में वाहक आवृत्ति: 51 में 1",
+            "locale": "hi",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Doença 1:10.000: q = 0,01; 2pq = 0,0198 (1 em 50,5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एलील आवृत्ति (q)",
+                "locale": "hi",
+                "template": "documented-authored-2308be00c6a5b2783443"
+              },
+              "value": {
+                "text": "1.00%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "वाहक आवृत्ति (2pq)",
+                "locale": "hi",
+                "template": "documented-authored-34371f2e5d25dd4cc952"
+              },
+              "value": {
+                "text": "1.98% (51 में 1)",
+                "locale": "hi",
+                "template": "documented-authored-c202d7a7507067e5b9c1",
+                "sourceNumbers": [
+                  1.98,
+                  51
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्रति गर्भावस्था दंपति जोखिम",
+                "locale": "hi",
+                "template": "documented-authored-61faa0bc6a8e7416ec86"
+              },
+              "value": {
+                "text": "0.010%",
+                "locale": "hi",
+                "template": "documented-authored-8a56de5aee99b0324342",
+                "sourceNumbers": [
+                  0.01
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "जनसंख्या में वाहक आवृत्ति: 51 में 1",
+            "locale": "hi",
+            "template": "documented-authored-4d278409d1f961cba137",
+            "sourceNumbers": [
+              51
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

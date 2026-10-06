@@ -85,3 +85,62 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Carrier frequency in the population: 1 in 26
+
+| Result details | |
+| --- | --- |
+| Allele frequency (q) | 2.00% |
+| Carrier frequency (2pq) | 3.92% (1 in 26) |
+| Couple risk per pregnancy | 0.038% |
+
+
+### 2
+
+Carrier frequency in the population: 1 in 26
+
+| Result details | |
+| --- | --- |
+| Allele frequency (q) | 2.00% |
+| Carrier frequency (2pq) | 3.92% (1 in 26) |
+| Couple risk per pregnancy | 0.980% |
+
+
+### 3
+
+Carrier frequency in the population: 1 in 26
+
+| Result details | |
+| --- | --- |
+| Allele frequency (q) | 2.00% |
+| Carrier frequency (2pq) | 3.92% (1 in 26) |
+| Couple risk per pregnancy | 0.653% |
+
+
+### 4
+
+Carrier frequency in the population: 1 in 51
+
+| Result details | |
+| --- | --- |
+| Allele frequency (q) | 1.00% |
+| Carrier frequency (2pq) | 1.98% (1 in 51) |
+| Couple risk per pregnancy | 25.000% |
+
+
+### 5
+
+Carrier frequency in the population: 1 in 51
+
+| Result details | |
+| --- | --- |
+| Allele frequency (q) | 1.00% |
+| Carrier frequency (2pq) | 1.98% (1 in 51) |
+| Couple risk per pregnancy | 0.010% |
+

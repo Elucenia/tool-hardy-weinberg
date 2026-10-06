@@ -85,3 +85,62 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Fréquence des porteurs dans la population : 1 sur 26
+
+| Détails du résultat | |
+| --- | --- |
+| Fréquence allélique (q) | 2,00% |
+| Fréquence des porteurs (2pq) | 3,92 % (1 sur 26) |
+| Risque du couple par grossesse | 0,038% |
+
+
+### 2
+
+Fréquence des porteurs dans la population : 1 sur 26
+
+| Détails du résultat | |
+| --- | --- |
+| Fréquence allélique (q) | 2,00% |
+| Fréquence des porteurs (2pq) | 3,92 % (1 sur 26) |
+| Risque du couple par grossesse | 0,980% |
+
+
+### 3
+
+Fréquence des porteurs dans la population : 1 sur 26
+
+| Détails du résultat | |
+| --- | --- |
+| Fréquence allélique (q) | 2,00% |
+| Fréquence des porteurs (2pq) | 3,92 % (1 sur 26) |
+| Risque du couple par grossesse | 0,653% |
+
+
+### 4
+
+Fréquence des porteurs dans la population : 1 sur 51
+
+| Détails du résultat | |
+| --- | --- |
+| Fréquence allélique (q) | 1,00% |
+| Fréquence des porteurs (2pq) | 1,98 % (1 sur 51) |
+| Risque du couple par grossesse | 25,000% |
+
+
+### 5
+
+Fréquence des porteurs dans la population : 1 sur 51
+
+| Détails du résultat | |
+| --- | --- |
+| Fréquence allélique (q) | 1,00% |
+| Fréquence des porteurs (2pq) | 1,98 % (1 sur 51) |
+| Risque du couple par grossesse | 0,010% |
+

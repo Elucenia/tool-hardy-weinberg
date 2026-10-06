@@ -85,3 +85,62 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Frequenza dei portatori nella popolazione: 1 su 26
+
+| Dettagli del risultato | |
+| --- | --- |
+| Frequenza allelica (q) | 2,00% |
+| Frequenza dei portatori (2pq) | 3,92% (1 su 26) |
+| Rischio della coppia per gravidanza | 0,038% |
+
+
+### 2
+
+Frequenza dei portatori nella popolazione: 1 su 26
+
+| Dettagli del risultato | |
+| --- | --- |
+| Frequenza allelica (q) | 2,00% |
+| Frequenza dei portatori (2pq) | 3,92% (1 su 26) |
+| Rischio della coppia per gravidanza | 0,980% |
+
+
+### 3
+
+Frequenza dei portatori nella popolazione: 1 su 26
+
+| Dettagli del risultato | |
+| --- | --- |
+| Frequenza allelica (q) | 2,00% |
+| Frequenza dei portatori (2pq) | 3,92% (1 su 26) |
+| Rischio della coppia per gravidanza | 0,653% |
+
+
+### 4
+
+Frequenza dei portatori nella popolazione: 1 su 51
+
+| Dettagli del risultato | |
+| --- | --- |
+| Frequenza allelica (q) | 1,00% |
+| Frequenza dei portatori (2pq) | 1,98% (1 su 51) |
+| Rischio della coppia per gravidanza | 25,000% |
+
+
+### 5
+
+Frequenza dei portatori nella popolazione: 1 su 51
+
+| Dettagli del risultato | |
+| --- | --- |
+| Frequenza allelica (q) | 1,00% |
+| Frequenza dei portatori (2pq) | 1,98% (1 su 51) |
+| Rischio della coppia per gravidanza | 0,010% |
+

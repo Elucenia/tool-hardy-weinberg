@@ -85,3 +85,62 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Frecuencia de portadores en la población: 1 en 26
+
+| Detalles del resultado | |
+| --- | --- |
+| Frecuencia del alelo (q) | 2,00% |
+| Frecuencia de portadores (2pq) | 3,92% (1 en 26) |
+| Riesgo de la pareja por embarazo | 0,038% |
+
+
+### 2
+
+Frecuencia de portadores en la población: 1 en 26
+
+| Detalles del resultado | |
+| --- | --- |
+| Frecuencia del alelo (q) | 2,00% |
+| Frecuencia de portadores (2pq) | 3,92% (1 en 26) |
+| Riesgo de la pareja por embarazo | 0,980% |
+
+
+### 3
+
+Frecuencia de portadores en la población: 1 en 26
+
+| Detalles del resultado | |
+| --- | --- |
+| Frecuencia del alelo (q) | 2,00% |
+| Frecuencia de portadores (2pq) | 3,92% (1 en 26) |
+| Riesgo de la pareja por embarazo | 0,653% |
+
+
+### 4
+
+Frecuencia de portadores en la población: 1 en 51
+
+| Detalles del resultado | |
+| --- | --- |
+| Frecuencia del alelo (q) | 1,00% |
+| Frecuencia de portadores (2pq) | 1,98% (1 en 51) |
+| Riesgo de la pareja por embarazo | 25,000% |
+
+
+### 5
+
+Frecuencia de portadores en la población: 1 en 51
+
+| Detalles del resultado | |
+| --- | --- |
+| Frecuencia del alelo (q) | 1,00% |
+| Frecuencia de portadores (2pq) | 1,98% (1 en 51) |
+| Riesgo de la pareja por embarazo | 0,010% |
+

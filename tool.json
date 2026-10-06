@@ -158,7 +158,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Hardy Weinberg 1908:p²+2 pq+q²; herança AR; irmão nãoafetado 2/3; risco conjugal×1/4",
-    "implementationVersion": "hardy-weinberg@native-2026-10-03+122bc955db05",
+    "implementationVersion": "hardy-weinberg@native-2026-10-05+d57b69e605a8",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/17779291/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -266,7 +266,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "122bc955db05f68c74eedf25184e4631ba72f06474efdda484c6feffeb3c48b3"
+      "implementationHash": "d57b69e605a85c6ee42f929fbc55bc31f91f7a326e657833ced137508cc3cb5b",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "hardy-weinberg@native-2026-10-03+122bc955db05",
+          "previousImplementationHash": "122bc955db05f68c74eedf25184e4631ba72f06474efdda484c6feffeb3c48b3",
+          "implementationHash": "d57b69e605a85c6ee42f929fbc55bc31f91f7a326e657833ced137508cc3cb5b",
+          "scientificBodySha256": "776d901c93c0951b566e0246690245f3eba7189d21797d9e8d12fa42f58f6805",
+          "metadataContractHash": "3ce209a515eecbab1ad6cabe299e434900859f69d7f5d17c87c06b6400af0982",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O cálculo populacional assume um locus autossômico com dois alelos em equilíbrio de Hardy–Weinberg; acasalamento aleatório e uma população idealmente muito grande são pressupostos, não resultados do cálculo. Usar q² como frequência da doença exige correspondência com o modelo recessivo considerado. O risco familiar de 25% pressupõe dois pais portadores; os 2/3 para um irmão não afetado são uma probabilidade condicional nesse cenário. Não aplique essas relações a qualquer doença genética nem as interprete como diagnóstico individual.",
     "limitsEvidence": {
@@ -301,15 +329,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/hardy-weinberg/calculator.js",
-    "bytes": 5134,
-    "sha256": "122bc955db05f68c74eedf25184e4631ba72f06474efdda484c6feffeb3c48b3"
+    "bytes": 5339,
+    "sha256": "d57b69e605a85c6ee42f929fbc55bc31f91f7a326e657833ced137508cc3cb5b"
   },
-  "sourceToolSha256": "a5ac7b42feebda7c788943c102e71546cfff2fb804424a7ea9fb1eb1fef9f498",
+  "sourceToolSha256": "3d58b195a085884bcef82f552aeba587cd5aa5b8bc7641b4ab97dd8528887216",
   "omittedFullReferenceBanks": [
     {
       "rows": 3,
       "sha256": "aaedeb207ac2ab3f9c7e6e65f94b2a588c4aaee1ac5ee6c154eb4ddcb4d227b6",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

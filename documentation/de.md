@@ -85,3 +85,62 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Trägerfrequenz in der Bevölkerung: 1 von 26
+
+| Ergebnisdetails | |
+| --- | --- |
+| Allelfrequenz (q) | 2,00% |
+| Trägerfrequenz (2pq) | 3,92% (1 von 26) |
+| Paarrisiko pro Schwangerschaft | 0,038% |
+
+
+### 2
+
+Trägerfrequenz in der Bevölkerung: 1 von 26
+
+| Ergebnisdetails | |
+| --- | --- |
+| Allelfrequenz (q) | 2,00% |
+| Trägerfrequenz (2pq) | 3,92% (1 von 26) |
+| Paarrisiko pro Schwangerschaft | 0,980% |
+
+
+### 3
+
+Trägerfrequenz in der Bevölkerung: 1 von 26
+
+| Ergebnisdetails | |
+| --- | --- |
+| Allelfrequenz (q) | 2,00% |
+| Trägerfrequenz (2pq) | 3,92% (1 von 26) |
+| Paarrisiko pro Schwangerschaft | 0,653% |
+
+
+### 4
+
+Trägerfrequenz in der Bevölkerung: 1 von 51
+
+| Ergebnisdetails | |
+| --- | --- |
+| Allelfrequenz (q) | 1,00% |
+| Trägerfrequenz (2pq) | 1,98% (1 von 51) |
+| Paarrisiko pro Schwangerschaft | 25,000% |
+
+
+### 5
+
+Trägerfrequenz in der Bevölkerung: 1 von 51
+
+| Ergebnisdetails | |
+| --- | --- |
+| Allelfrequenz (q) | 1,00% |
+| Trägerfrequenz (2pq) | 1,98% (1 von 51) |
+| Paarrisiko pro Schwangerschaft | 0,010% |
+
